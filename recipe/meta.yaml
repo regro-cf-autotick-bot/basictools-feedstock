@@ -10,7 +10,7 @@ source:
   sha256: a7b9ebb0df0a8a280e09e1393205d2bfdca382cad162cafadf646adbe0518c3a
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py==38 and osx]
 
 requirements:
@@ -35,6 +35,7 @@ outputs:
         - python
         - cross-python_{{ target_platform }}     # [build_platform != target_platform]
         - {{ compiler('c') }}
+        - {{ stdlib("c") }}
         - {{ compiler('cxx') }}
         - cython <3
       host:
