@@ -46,6 +46,7 @@ outputs:
         - eigency
         - mkl
         - mkl-include
+        - setuptools
         - setuptools-scm
         - eigen
         - libboost-headers
